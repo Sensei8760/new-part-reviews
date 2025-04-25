@@ -15,61 +15,74 @@
   </head>
   <body>
     <main>
-      <section class="section-reviews">
+      <section class="section-reviews" id="reviews">
         <div class="rev-container">
           <h2 class="rev-title">Reviews</h2>
-          <ul class="rev-list">
-            <li class="rev-item">
-              <img
-                srcset="./img/review-pic-1.jpg 1x, ./img/review-pic-1-2x.jpg 2x"
-                src="./img/review-pic-1.jpg"
-                alt="review-icon-1"
-                width="56px"
-                height="56px"
-                class="rev-icon"
-              />
-              <h3 class="rev-name">John Wax</h3>
-              <p class="rev-text">
-                Buying a watch from was the best choice for me. The design is
-                perfectly combined with high quality materials. The strap fits
-                nicely on the hand, and the mechanism works flawlessly.
-              </p>
-            </li>
-            <li class="rev-item rev-none">
-              <img
-                srcset="./img/review-pic-2.jpg 1x, ./img/review-pic-2-2x.jpg 2x"
-                src="./img/review-pic-2.jpg"
-                alt="review-icon-2"
-                width="56px"
-                height="56px"
-                class="rev-icon"
-              />
-              <h3 class="rev-name">Victoria Romashenko</h3>
-              <p class="rev-text">
-                Can't take my eyes off my watch from. Every time I put it on, it
-                is admired by those around me. The build quality and attention
-                to detail make it a real gem among my accessories.
-              </p>
-            </li>
-            <li class="rev-item rev-none1">
-              <img
-                srcset="./img/review-pic-3.jpg 1x, ./img/review-pic-3-2x.jpg 2x"
-                src="./img/review-pic-3.jpg"
-                alt="review-icon-3"
-                width="56px"
-                height="56px"
-                class="rev-icon"
-              />
-              <h3 class="rev-name">Anastasia Trachuk</h3>
-              <p class="rev-text">
-                My watch from is a real masterpiece. Every detail impresses with
-                the high quality of execution. Special features like [specify
-                features] make it an indispensable companion in my daily life.
-              </p>
-            </li>
-          </ul>
+          <div class="rev-slider-wrapper">
+            <ul class="rev-list">
+              <li class="rev-item">
+                <img
+                  srcset="
+                    ./img/review-pic-1.jpg    1x,
+                    ./img/review-pic-1-2x.jpg 2x
+                  "
+                  src="./img/review-pic-1.jpg"
+                  alt="review-icon-1"
+                  width="56px"
+                  height="56px"
+                  class="rev-icon"
+                />
+                <h3 class="rev-name">John Wax</h3>
+                <p class="rev-text">
+                  Buying a watch from was the best choice for me. The design is
+                  perfectly combined with high quality materials. The strap fits
+                  nicely on the hand, and the mechanism works flawlessly.
+                </p>
+              </li>
+              <li class="rev-item rev-none">
+                <img
+                  srcset="
+                    ./img/review-pic-2.jpg    1x,
+                    ./img/review-pic-2-2x.jpg 2x
+                  "
+                  src="./img/review-pic-2.jpg"
+                  alt="review-icon-2"
+                  width="56px"
+                  height="56px"
+                  class="rev-icon"
+                />
+                <h3 class="rev-name">Victoria Romashenko</h3>
+                <p class="rev-text">
+                  Can't take my eyes off my watch from. Every time I put it on,
+                  it is admired by those around me. The build quality and
+                  attention to detail make it a real gem among my accessories.
+                </p>
+              </li>
+              <li class="rev-item rev-none1">
+                <img
+                  srcset="
+                    ./img/review-pic-3.jpg    1x,
+                    ./img/review-pic-3-2x.jpg 2x
+                  "
+                  src="./img/review-pic-3.jpg"
+                  alt="review-icon-3"
+                  width="56px"
+                  height="56px"
+                  class="rev-icon"
+                />
+                <h3 class="rev-name">Anastasia Trachuk</h3>
+                <p class="rev-text">
+                  My watch from is a real masterpiece. Every detail impresses
+                  with the high quality of execution. Special features like
+                  [specify features] make it an indispensable companion in my
+                  daily life.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
+    <script src="./js/slide.js"></script>
   </body>
 </html>

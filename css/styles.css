@@ -29,6 +29,7 @@ h6 {
 }
 .section-reviews {
   background-color: #fbfbfb;
+  padding-bottom: 60px;
 }
 .rev-list {
   display: flex;
@@ -74,13 +75,14 @@ h6 {
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
-.rev-none {
-  display: none;
-}
+.rev-none,
 .rev-none1 {
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .section-reviews {
+    padding-bottom: 80px;
+  }
   .rev-container {
     max-width: 768px;
     padding: 0 32px;
@@ -99,7 +101,7 @@ h6 {
   }
   .rev-item {
     max-width: 344px;
-    flex-wrap: wrap;
+    flex-basis: calc((100% - 16px) / 2);
   }
   .rev-name {
     font-size: 18px;
@@ -111,6 +113,9 @@ h6 {
   }
 }
 @media screen and (min-width: 1280px) {
+  .section-reviews {
+    padding-bottom: 100px;
+  }
   .rev-container {
     max-width: 1280px;
     padding: 0 65px;
@@ -118,12 +123,35 @@ h6 {
   .rev-item {
     display: flex;
     max-width: 370px;
-    flex-basis: calc((100% - 20px) / 3);
+    flex-basis: calc((100% - 40px) / 3);
   }
   .rev-list {
     gap: 20px;
   }
   .rev-text {
-    width: 298px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .rev-slider-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .rev-list {
+    display: flex;
+    width: 300%; /* 3 слайди */
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+
+  .rev-item {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .rev-none,
+  .rev-none1 {
+    display: flex; /* Всі три слайди доступні */
   }
 }
